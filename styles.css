@@ -382,7 +382,7 @@ p {
   margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #F7577DE8;
+  background-color: #f7577de8;
 }
 
 .language-tags .tag .icon {
@@ -462,6 +462,15 @@ p {
   cursor: pointer;
 }
 
+.popup .close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
 .close-popup:hover
 .close-popup:focus {
   color: #fff;
@@ -472,7 +481,7 @@ p {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -491,7 +500,7 @@ p {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate (-50%, -50%);
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -503,15 +512,6 @@ p {
 .contact-title{
   font-size: large;
   color: #000;
-}
-
-.popup .close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #aaa;
 }
 
 .popup .close-popup:hover .popup .close-popup:focus {

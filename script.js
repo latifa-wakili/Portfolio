@@ -4,12 +4,12 @@ function toggleMenu() {
 }
 
 // Event listener for menu anchor links
-document.querySelectorAll('.menu a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+document.querySelectorAll('.menu a').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector('.menu').classList.remove('active');
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
     });
 });
@@ -50,23 +50,23 @@ function closeModal(modal) {
 }
 
 // Add click event to buttons
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
+buttons.forEach((button) => {
+    button.addEventListener('click', function () {
         const modalId = this.textContent.toLowerCase() + 'Modal';
         openModal(modalId);
     });
 });
 
 // Add click event to close buttons
-closeBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+closeBtns.forEach((btn) => {
+    btn.addEventListener('click', function () {
         closeModal(this.closest('.modal'));
     });
 });
 
 // Close modal when clicking outside
-window.addEventListener('click', function(event) {
-    modals.forEach(modal => {
+window.addEventListener('click', function (event) {
+    modals.forEach((modal) => {
         if (event.target === modal) {
             closeModal(modal);
         }
