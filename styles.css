@@ -77,7 +77,7 @@ nav {
   }
 
   .nav-links.active {
-   display: flex;
+    display: flex;
   }
 }
 
@@ -99,7 +99,6 @@ nav {
 .profile-image {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Adjust as needed */
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -112,7 +111,6 @@ nav {
   max-width: 100%;
   height: auto;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -140,8 +138,20 @@ nav {
   position: relative;
 }
 
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f76285e8;
+}
+
 .hello-section h2 {
-  margin-top: 10px; 
+  margin-top: 10px;
+}
+
+p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 20px;
 }
 
 .hello-section p {
@@ -163,23 +173,11 @@ nav {
   position: relative;
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #f76285e8;
-}
-
 .P1 {
   font-size: 16px;
   max-width: 600px;
   margin: 0 auto 20px;
-  color: #7EBCD5;
-}
-
-p {
-  font-size: 16px;
-  max-width: 600px;
-  margin: 0 auto 20px;
+  color: #7ebcd5;
 }
 
 .buttons {
@@ -206,7 +204,7 @@ p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -242,12 +240,12 @@ p {
 }
 
 .cornerpic {
-  width: 200px; 
+  width: 200px;
   height: auto;
   margin-right: 1px;
 }
 
-.icon2{
+.icon2 {
   margin-left: 1020px;
   margin-bottom: 40px;
 }
@@ -272,13 +270,13 @@ p {
 .certificate-card {
   display: flex;
   align-items: center;
-  background-color: #FBA4B9;
+  background-color: #fba4b9;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
   width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .certificate-card img {
@@ -323,7 +321,7 @@ p {
 .about-text {
   font-size: 20px;
   line-height: 1.6;
-  margin-right: 90px; 
+  margin-right: 90px;
 }
 
 .about-illustration {
@@ -336,7 +334,6 @@ p {
 
 .skills-section {
   background-color: #fff;
-  color: rgb(0, 0, 0);
   padding: 20px;
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -351,9 +348,9 @@ p {
 .skill {
   color: #000;
 }
+
 .skills-text {
   flex: 1;
-
 }
 
 .soft-skills {
@@ -447,18 +444,6 @@ p {
   cursor: pointer;
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .popup-content {
   background-color: #fff;
   margin: 15% auto;
@@ -529,8 +514,7 @@ p {
   color: #aaa;
 }
 
-.popup .close-popup:hover
-.popup .close-popup:focus {
+.popup .close-popup:hover .popup .close-popup:focus {
   color: #fff;
 }
 
@@ -560,7 +544,7 @@ p {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #F7577DE8;
+  background-color: #f7577de8;
   border-radius: 5px;
 }
 
@@ -575,9 +559,8 @@ footer .heart {
   color: red;
 }
 
-
 #contact {
-  background-color: #F7577DE8;
+  background-color: #f7577de8;
   color: rgb(0, 0, 0);
   padding: 50px 20px;
   text-align: center;
@@ -593,8 +576,7 @@ footer .heart {
   margin: 0 auto;
 }
 
-#contact-form input
-#contact-form textarea {
+#contact-form input #contact-form textarea {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
