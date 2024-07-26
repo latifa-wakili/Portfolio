@@ -1,21 +1,21 @@
 function toggleMenu() {
-    document.querySelector('.menu').classList.toggle('active');
-  }
+  document.querySelector('.menu').classList.toggle('active');
+}
   
-  document.querySelectorAll('.menu a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('.menu').classList.remove('active');
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+document.querySelectorAll('.menu a').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('.menu').classList.remove('active');
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
     });
   });
+});
   
-  function createParticles() {
-    const container = document.getElementById('particles');
-    for (let i = 0; i < 20; i++) {
-        let particle = document.createElement('div');
+function createParticles() {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 20; i++) {
+  let particle = document.createElement('div');
         particle.classList.add('particle');
         particle.style.width = Math.random() * 5 + 'px';
         particle.style.height = particle.style.width;
@@ -37,17 +37,17 @@ function toggleMenu() {
   
   // Function to open modal
   function openModal(modalId) {
-      document.getElementById(modalId).style.display = "block";
-  }
+    document.getElementById(modalId).style.display = "block";
+}
   
   // Function to close modal
   function closeModal(modal) {
-      modal.style.display = "none";
-  }
+  modal.style.display = "none";
+}
   
   // Add click event to buttons
   buttons.forEach(button => {
-      button.addEventListener('click', function() {
+    button.addEventListener('click', function() {
           const modalId = this.textContent.toLowerCase() + 'Modal';
           openModal(modalId);
       });
@@ -71,14 +71,14 @@ function toggleMenu() {
   
   // Function to show certificate
   function showCertificate() {
-      openModal('certificateModal');
-  }
+  openModal('certificateModal');
+}
   
   // Add certificate button if it doesn't exist
   if (!document.querySelector('.button[onclick="showCertificate()"]')) {
-      const certificateBtn = document.createElement('button');
-      certificateBtn.className = 'button';
-      certificateBtn.textContent = 'Certificate';
-      certificateBtn.onclick = showCertificate;
-      document.querySelector('.buttons').appendChild(certificateBtn);
-  }
+  const certificateBtn = document.createElement('button');
+  certificateBtn.className = 'button';
+  certificateBtn.textContent = 'Certificate';
+  certificateBtn.onclick = showCertificate;
+  document.querySelector('.buttons').appendChild(certificateBtn);
+}

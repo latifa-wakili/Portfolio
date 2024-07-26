@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #fff;
   color: rgb(0, 0, 0);
 }
 
@@ -22,7 +22,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 1rem;
 }
 
@@ -58,26 +58,26 @@ nav {
 
 @media (max-width: 768px) {
   .menu-icon {
-      display: block;
+    display: block;
   }
 
   .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
   }
 
   .nav-links li {
-      margin: 0;
+    margin: 0;
   }
 
   .nav-links a {
-      padding: 1rem;
-      border-bottom: 1px solid #575757;
+    padding: 1rem;
+    border-bottom: 1px solid #575757;
   }
 
   .nav-links.active {
-      display: flex;
+   display: flex;
   }
 }
 
@@ -125,7 +125,7 @@ nav {
 }
 
 .hello-section {
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,11 +141,11 @@ nav {
 }
 
 .hello-section h2 {
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px; 
 }
 
 .hello-section p {
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px;
 }
 
 .particles-container {
@@ -210,7 +210,7 @@ p {
 }
 
 .modal-content {
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -254,7 +254,7 @@ p {
 
 .certificates-section {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .certificates-content {
@@ -301,8 +301,8 @@ p {
 }
 
 #about-me {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   padding: 20px;
   border-radius: 10px;
   position: absolute;
@@ -335,11 +335,12 @@ p {
 }
 
 .skills-section {
-  background-color: #ffffff;
+  background-color: #fff;
   color: rgb(0, 0, 0);
   padding: 20px;
   font-family: Arial, sans-serif;
   font-size: 20px;
+  color: #000;
 }
 
 .skills-container {
@@ -347,8 +348,12 @@ p {
   justify-content: space-between;
 }
 
+.skill {
+  color: #000;
+}
 .skills-text {
   flex: 1;
+
 }
 
 .soft-skills {
@@ -388,7 +393,7 @@ p {
 }
 
 #my-work {
-  background-color: #ffffff;
+  background-color: #fff;
   color: rgb(0, 0, 0);
   padding: 20px;
 }
@@ -455,7 +460,7 @@ p {
 }
 
 .popup-content {
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -478,7 +483,7 @@ p {
   text-decoration: none;
 }
 
-.live-link, .source-link {
+.live-link .source-link {
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -488,7 +493,7 @@ p {
   border-radius: 5px;
 }
 
-.live-link:hover, .source-link:hover {
+.live-link:hover .source-link:hover {
   background-color: #45a049;
 }
 
@@ -502,7 +507,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -560,7 +565,7 @@ p {
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: #fff;
   color: rgb(0, 0, 0);
   padding: 10px;
   text-align: center;
