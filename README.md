@@ -1,40 +1,54 @@
-readme# Project Title 🚀
-Telephone-Number-Validator
+# Personal Portfolio 🚀
+
 ## Project Description 📝
+### Project Description for Latifa Wakili's Portfolio
 
-A telephone number validator created using JavaScript, HTML, and CSS is a simple web application that allows users to input a phone number and check its validity based on specific formatting rules. The application features an input field for entering the phone number, a "Check" button to validate the input, and a "Clear" button to reset the results. It provides real-time feedback by displaying messages indicating whether the entered phone number is valid or invalid. The user interface is styled with CSS to enhance visual appeal, and JavaScript handles the validation logic and user interactions.
+This portfolio website, created using HTML, CSS, and JavaScript, showcases the work and skills of Latifa Wakili, a web developer specializing in product development and responsive web design. The site is designed to provide a visually engaging and comprehensive platform to highlight Latifa's expertise, achievements, and aspirations. Key features of the portfolio include:
+- **Interactive Navigation**: A hamburger menu for mobile and a traditional menu for desktop provide easy navigation throughout the site.
+- **Professional Profile**: Sections like "About Me," "Skills," and "Certifications" detail Latifa's background, technical skills, and professional accomplishments.
+- **Project Showcase**: A dedicated "My Work" section highlights various projects Latifa has worked on, complete with screenshots and detailed descriptions.
+- **Contact Form**: Visitors can easily get in touch with Latifa through a straightforward contact form, making it simple to reach out for potential collaborations or inquiries.
 
+```html
+  <div class="project-screenshot">
+              <img src="R.N.C.jpg" alt="Project 1 Screenshot"  id="sc"/>
+            </div>
+            <button class="see-project" id="see-project1">See project</button>
+          </div>
+```
 
+```css
+#contact-form input
+#contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact-form button {
+  padding: 8px 30px;
+  background-color: #f2d4d}
+```
+
+```javascript
+const projectsContainer = document.getElementById('projects-container');
+const popup = document.getElementById('popup');
+const popupImg = document.getElementById('popup-img');
+```
 ## Demo 📸
-![Demo](T-N-V.png)
+![Demo]![image](Port.png)
+
 ## Technologies Used 🛠️
 
 - HTML
 - CSS
-- JS
-
-## Installation 💻
-
-Provide step-by-step instructions on how to install and set up your project. Include any dependencies or prerequisites that need to be installed.
-
-```bash
-# git@github.com:latifa-wakili/Telephone-Number-Validator.git.
-```
-
-```bash
-# cd Telephone-Number-Validator.
-```
-
-
- ```bash
-# code .
-```
+- JavaScript
 
 ## Usage 🎯
-
-```bash
-# use git clone .
-```
+To use this website, you only should have a browser.
 
 ## Author 👩‍💻
 - Twitter: [@Latifa_Wakili](https://x.com/WakiliLatifa?t=wlHTh8JuyFprQsN_hZQGWQ&s=08)
@@ -42,5 +56,5 @@ Provide step-by-step instructions on how to install and set up your project. Inc
 - Email: [Latifa Wakili](saavenwakili@gmail.com)
 
 ## Contributing 🤝
-for team working at first you should creat an organization on git hub nex you can creat pull_request on your project to shear whith your team and work on it together.
+It was a great team work with designers (Hadia Rauf, Froozan Azimi, Fatana Yaqubi, and Marzia Arman), who designed this special Portfolio page for me, thanks dears.
 

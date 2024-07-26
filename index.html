@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latifa Wakili's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7x1M4Q6v2hE3T+7hJ9aXT6f9C7XmyH5X+7Q" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <img src="Portfolio.png" alt="PORTFOLIO">
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#Hello">Hello</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="profile-image">
+        <img src="Rectangle 13.png" alt="Profile">
+    </div>
+    <div class="content">
+        <h1 class="welcome-text">Welcome to My Portfolio</h1>
+    </div>
+    <div id="Hello" class="section hello-section">
+        <div class="hello-content">
+            <div class="particles-container">
+                <div class="particles" id="particles"></div>
+            </div>
+            <h2>Hello,</h2>
+            <p class="P1">I am Latifa Wakili, a web developer specializing in product development and responsive web design.</p>
+          </div>
+          <div id="certificates" class="section certificates-section">
+            <div class="certificates-content">
+                <h2>Certification</h2>
+                <div class="certificate-card">
+                    <img src="Screenshot (29).png" alt="Certificate 1">
+                    <div class="certificate-details">
+                        <p>I Completed Responsive webdevelopment</p>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <img src="Screenshot (29).png" alt="Certificate 2">
+                    <div class="certificate-details">
+                        <p>I Completed JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img src="Rectangle 15.png" alt="girl icon" class="icon2"> 
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+    <img src="Group 135.png" alt="imageofdots" class="dots-container"> 
+
+    <div id="about" class="section">
+        <section id="about-me">
+            <h2 class="about-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">My name is Latifa Wakili. As an aspiring web developer, I have built a strong grasp of the core web technologies - CSS, JavaScript, and HTML. With expertise in styling, interactivity, and content structuring, I am equipped to craft impressive and user-centric websites that captivate audiences. My web development skills position me to create engaging online experiences.</p>
+                <img src="6199076_3190341 1 (1).png" alt="Developer Illustration" class="about-illustration">
+            </div>
+        </section>
+    </div>
+
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-text">
+                <div class="skill-category">
+                    <h3>Languages:</h3>
+                    <ol>
+                        <li>JavaScript</li><br/>
+                        <li>HTML</li><br/>
+                        <li>CSS</li>
+                    </ol>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional Skills:</h3>
+                    <ol>
+                        <li>Teamwork</li><br/>
+                        <li>Project Management</li><br/>
+                        <li>Responsive Design</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <h3>Soft Skills:</h3>
+                <ol>
+                    <li>GitHub & Git</li><br/>
+                    <li>Problem Solving</li><br/>
+                    <li>Learning Agility</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <img src="OBJECTS.png" alt="girl icon" class="icon"> 
+
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+    <img src="Group 135.png" alt="imageofdots" class="dots-container">
+
+    <section id="my-work">
+        <h2>My work</h2>
+        <div id="projects-container">
+          <!-- Project 1 -->
+          <div class="project-card" id="project1">
+            <div class="project-technologies">
+              <span class="tech-icon">JS</span>
+              <span class="tech-icon">HTML5</span>
+              <span class="tech-icon">CSS3</span>
+            </div>
+            <div class="project-details">
+              <h3>Effective</h3>
+              <p>A Roman Numeral Converter</p>
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-screenshot">
+              <img src="R.N.C.jpg" alt="Project 1 Screenshot"  id="sc"/>
+            </div>
+            <button class="see-project" id="see-project1">See project</button>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card" id="project2">
+            <div class="project-technologies">
+              <span class="tech-icon">JS</span>
+              <span class="tech-icon">HTML5</span>
+              <span class="tech-icon">CSS3</span>
+            </div>
+            <div class="project-details">
+              <h3>Effective</h3>
+              <p>A Plondoriam checker</p>
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-screenshot">
+              <img src="P.C.jpg" alt="Project 2 Screenshot" />
+            </div>
+            <button class="see-project" id="see-project2">See project</button>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card" id="project3">
+            <div class="project-technologies">
+              <span class="tech-icon">JS</span>
+              <span class="tech-icon">HTML5</span>
+              <span class="tech-icon">CSS3</span>
+            </div>
+            <div class="project-details">
+              <h3>Effective</h3>
+              <p>A platform for e-learning website</p>
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-screenshot">
+              <img src="Pik.png" alt="Project 3 Screenshot" />
+            </div>
+            <button class="see-project" id="see-project3">See project</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup" id="popup">
+        <span class="close-popup">&times;</span>
+        <div class="popup-content">
+          <img id="popup-img" src="" alt="Project Screenshot" />
+        </div>
+      </div>
+
+    <div id="contact" class="section contact-section">
+        <h2 class="contact-title">Contact Me</h2>
+        <p class="contact-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I'd love to help with it</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name" maxlength="30" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Message..." maxlength="500" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Get in touch</button>
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
