@@ -1,17 +1,19 @@
 // Function to toggle menu
 function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('active');
+  document.querySelector('.header').classList.toggle('active');
 }
 
+
+
 // Event listener for menu anchor links
-document.querySelectorAll('.menu a').forEach((anchor) => {
+document.querySelectorAll('.nav-links a').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    document.querySelector('.menu').classList.remove('active');
+    document.querySelector('.header').classList.remove('active');
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-        });
+      behavior: 'smooth',
     });
+  });
 });
 
 // Function to create particles
@@ -55,14 +57,14 @@ function closeModal(modal) {
 buttons.forEach((button) => {
   button.addEventListener('click', function () {
     const modalId = this.textContent.toLowerCase() + 'Modal';
-     openModal(modalId);
+    openModal(modalId);
   });
 });
 
 // Add click event to close buttons
 closeBtns.forEach((btn) => {
   btn.addEventListener('click', function () {
-  closeModal(this.closest('.modal'));
+    closeModal(this.closest('.modal'));
   });
 });
 
