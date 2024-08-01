@@ -1,10 +1,14 @@
+// Function to toggle image enlargement
+document.querySelectorAll('.certificate-image').forEach(image => {
+  image.addEventListener('click', () => {
+    image.classList.toggle('enlarged');
+  });
+});
 
-// Function to toggle menu
+// Existing JavaScript
 function toggleMenu() {
   document.querySelector('.header').classList.toggle('active');
 }
-
-
 
 // Event listener for menu anchor links
 document.querySelectorAll('.nav-links a').forEach((anchor) => {
@@ -62,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
 
 const projects = [
   {
