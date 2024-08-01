@@ -1,3 +1,4 @@
+
 // Function to toggle menu
 function toggleMenu() {
   document.querySelector('.header').classList.toggle('active');
@@ -16,77 +17,98 @@ document.querySelectorAll('.nav-links a').forEach((anchor) => {
   });
 });
 
-// Function to create particles
-function createParticles() {
-  const container = document.getElementById('particles');
-  for (let i = 0; i < 20; i += 1) {
-    const particle = document.createElement('div');
-    particle.classList.add('particle');
-    particle.style.width = `${Math.random() * 5}px`;
-    particle.style.height = particle.style.width;
-    particle.style.left = `${Math.random() * 100}%`;
-    particle.style.top = `${Math.random() * 100}%`;
-    particle.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
-    particle.style.borderRadius = '50%';
-    particle.style.position = 'absolute';
-    container.appendChild(particle);
-  }
-}
-
-// DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', () => {
-  createParticles();
-});
+  // بارگذاری داده‌ها از localStorage در صورت وجود
+  const formData = JSON.parse(localStorage.getItem('formData')) || {};
+  if (formData.name) document.querySelector("#name").value = formData.name;
+  if (formData.email) document.querySelector("#email").value = formData.email;
+  if (formData.message) document.querySelector("#message").value = formData.message;
 
-// Get all buttons and modals
-const buttons = document.querySelectorAll('.button');
-const modals = document.querySelectorAll('.modal');
-const closeBtns = document.querySelectorAll('.close');
-
-// Function to open modal
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = 'block';
-}
-
-// Function to close modal
-function closeModal(modal) {
-  modal.style.display = 'none';
-}
-
-// Add click event to buttons
-buttons.forEach((button) => {
-  button.addEventListener('click', function () {
-    const modalId = this.textContent.toLowerCase() + 'Modal';
-    openModal(modalId);
+  // ثبت رویداد برای ذخیره داده‌ها در localStorage
+  document.querySelector("#contact-form").addEventListener('input', (e) => {
+    const field = e.target;
+    const data = JSON.parse(localStorage.getItem('formData')) || {};
+    data[field.name] = field.value;
+    localStorage.setItem('formData', JSON.stringify(data));
   });
-});
 
-// Add click event to close buttons
-closeBtns.forEach((btn) => {
-  btn.addEventListener('click', function () {
-    closeModal(this.closest('.modal'));
-  });
-});
+  // مدیریت ارسال فرم
+  document.querySelector("#contact-form").addEventListener('submit', (event) => {
+    event.preventDefault(); // جلوگیری از ارسال پیش‌فرض فرم
 
-// Close modal when clicking outside
-window.addEventListener('click', (event) => {
-  modals.forEach((modal) => {
-    if (event.target === modal) {
-      closeModal(modal);
+    let nameField = document.querySelector("#name");
+    let emailField = document.querySelector("#email");
+    let messageField = document.querySelector("#message");
+    let emailPattern = /^[^\s@]+@[^\s]+\.[^\s@]+$/;
+    const errorElement = document.querySelector('#error-message');
+
+    // اعتبارسنجی فرم
+    if (nameField.value.length <= 30 && nameField.value !== "" &&
+        emailPattern.test(emailField.value) && emailField.value !== "" &&
+        messageField.value.length >= 50 && messageField.value !== "") {
+
+      // پاک‌کردن پیام خطا
+      errorElement.style.display = 'none';
+      
+      // ارسال فرم به Formspree
+      event.target.submit();
+
+      // پاک‌کردن داده‌ها از localStorage
+      localStorage.removeItem('formData');
+      
+    } else {
+      // نمایش پیام خطا
+      errorElement.style.display = 'block';
     }
   });
 });
 
-// Function to show certificate
-function showCertificate() {
-  openModal('certificateModal');
-}
 
-// Add certificate button if it doesn't exist
-if (!document.querySelector('.button[onclick="showCertificate()"]')) {
-  const certificateBtn = document.createElement('button');
-  certificateBtn.className = 'button';
-  certificateBtn.textContent = 'Certificate';
-  certificateBtn.addEventListener('click', showCertificate);
-  document.querySelector('.buttons').appendChild(certificateBtn);
-}
+const projects = [
+  {
+      title: "Effective",
+      description: "A Roman Numeral Converter",
+      image: "R.N.C.jpg",
+      liveLink: "https://example.com/live1",
+      sourceLink: "https://github.com/example/repo1"
+  },
+  {
+      title: "Effective",
+      description: "A Plondoriam checker",
+      image: "P.C.jpg",
+      liveLink: "https://example.com/live2",
+      sourceLink: "https://github.com/example/repo2"
+  },
+  {
+      title: "Effective",
+      description: "A platform for e-learning website",
+      image: "Pik.png",
+      liveLink: "https://example.com/live3",
+      sourceLink: "https://github.com/example/repo3"
+  }
+];
+
+document.querySelectorAll('.see-project').forEach(button => {
+  button.addEventListener('click', () => {
+      const projectId = button.parentElement.getAttribute('data-id');
+      const project = projects[projectId];
+
+      document.getElementById('popup-title').textContent = project.title;
+      document.getElementById('popup-description').textContent = project.description;
+      document.getElementById('popup-image').src = project.image;
+      document.getElementById('popup-live-link').href = project.liveLink;
+      document.getElementById('popup-source-link').href = project.sourceLink;
+
+      document.getElementById('project-popup').style.display = 'flex';
+  });
+});
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+  document.getElementById('project-popup').style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === document.getElementById('project-popup')) {
+      document.getElementById('project-popup').style.display = 'none';
+  }
+});
