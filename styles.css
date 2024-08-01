@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,8 @@ body {
   background-color: #fff;
   color: rgb(0, 0, 0);
 }
-.container{
+
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,11 +30,11 @@ body {
 .logo {
   padding: 0 30px;
 }
-#logo{
+
+#logo {
   width: 120px;
   height: 30px;
 }
-
 
 nav {
   display: flex;
@@ -43,10 +44,10 @@ nav {
   padding: 1rem;
   width: 50%;
 }
-.menu-icon{
+
+.menu-icon {
   visibility: collapse;
 }
-
 
 .nav-links {
   list-style: none;
@@ -70,7 +71,8 @@ nav {
   background-color: #575757;
   border-radius: 4px;
 }
-.section-2{
+
+.section-2 {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -81,6 +83,7 @@ nav {
   padding: 20px;
   text-align: center;
 }
+
 .welcome-text {
   font-size: 36px;
   text-align: center;
@@ -97,7 +100,6 @@ nav {
   position: relative;
   width: 100%;
 }
-
 
 .profile-image {
   display: flex;
@@ -143,20 +145,24 @@ p {
   margin: 0 auto 20px;
   color: #7ebcd5;
 }
-.certificates-section{
+
+.certificates-section {
   padding: 20px;
   background-color: #fff;
 }
+
 .certificates-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .certificates-section h2 {
   margin-bottom: 20px;
   font-size: 2em;
   color: #333;
 }
+
 .certificate-card {
   display: flex;
   align-items: center;
@@ -174,70 +180,73 @@ p {
   margin-bottom: 40px;
   box-sizing: border-box;
 }
-.icon-img{
-  width: 100px;
 
+.icon-img {
+  width: 100px;
 }
 
-  .section3{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.section3 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  }
-  .icon-img{
-    width: 100%;
-  }
-  .dots-container{
-    width: 250px;
-  }
-  .info{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 30px;
-  }
-  .about-me{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: column;
-    margin: 30px;
-  }
-  .icon{
-    width: 50%;
-    align-items:center;
-    justify-content: center;
-    height: 100vh;
-    display: flex;
-  }
-  .about-text{
-    font-size: 20px;
-    line-height: 1.6;
-    margin-right: 90px;
-    width: 700px;
-  }
+.icon-img {
+  width: 100%;
+}
 
-  .about-title {
-    color: #000;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  .about-illustration {
-    position: relative;
-    bottom: 170px;
-    right: 100px;
-    width: 200px; 
-    height: auto;
-  }
+.dots-container {
+  width: 250px;
+}
 
+.info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
 
+.about-me {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.icon {
+  width: 50%;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+}
+.about-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-right: 90px;
+  width: 700px;
+}
+
+.about-title {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-illustration {
+  position: relative;
+  bottom: 170px;
+  right: 100px;
+  width: 200px; 
+  height: auto;
+}
 
 .particles {
   width: 100%;
@@ -245,7 +254,6 @@ p {
   position: relative;
 }
 
-/* Existing CSS */
 #certificateImage {
   width: 100%;
   max-width: 500px;
@@ -303,7 +311,6 @@ p {
   color: #333;
 }
 
-/* New CSS for enlarged image */
 .certificate-image.enlarged {
   transform: scale(4);
   z-index: 1000;
@@ -393,7 +400,7 @@ p {
   gap: 20px;;
 }
 
-#my-work h2{
+#my-work h2 {
   margin-right: 900px;
 }
 
@@ -439,7 +446,7 @@ p {
   border-radius: 20px;
   cursor: pointer;
 }
-/* Popup styles */
+
 .popup {
   display: none;
   position: fixed;
@@ -456,23 +463,23 @@ p {
   background: white;
   padding: 20px;
   border-radius: 5px;
-  width: 950px;  /* Set width */
-  height: 500px; /* Set height */
+  width: 950px;
+  height: 500px;
   position: relative;
-  box-sizing: border-box; /* Ensures padding is included in the width and height */
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column; /* Stack child elements vertically */
-  justify-content: space-between; /* Distribute space between items */
-  overflow: hidden; /* Hides content overflow */
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .popup-content img {
   width: 850px;
   height: 350px;
-  object-fit: cover; /* Ensures the image covers the available space without distortion */
+  object-fit: cover;
 }
 
-.popup-content h3, .popup-content p, .popup-content a {
+.popup-content h3 .popup-content p .popup-content a {
   margin: 0;
   padding: 5px ;
 }
@@ -485,14 +492,12 @@ p {
   cursor: pointer;
 }
 
-
-
 .project-card img {
   width: 100%;
   border-radius: 10px;
 }
 
-.contact-title{
+.contact-title {
   font-size: large;
   color: #000;
 }
@@ -541,8 +546,7 @@ p {
 .nav-links li i {
   visibility: collapse;
 }
-/* 
-/* استایل‌ها برای موبایل (تا عرض 768 پیکسل) ==============================================================*/
+
 @media only screen and (max-width: 768px) {
   *{
     padding: 0;
@@ -563,6 +567,7 @@ p {
     width: 100%;
     box-sizing: content-box;
   }
+
   .menu-icon{
     visibility: visible;
   }
@@ -572,7 +577,8 @@ p {
     font-weight: bold;
     padding: 20px;
   }
-  .section-2{
+
+  .section-2 {
     display: flex;
     flex-direction: column;
     height: 500px;
@@ -594,44 +600,50 @@ p {
   .menu-icon{
     font-size: 30px;
   }
-  .hello{
+
+  .hello {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     flex-direction: column;
   }
-  .P1{
+
+  .P1 {
     text-align: center;
   }
+
   .icon2 {
     margin-left: 0;
     margin-bottom: 0;
   }
-  .icon2{
+
+  .icon2 {
     visibility: collapse;
   }
-  .section3{
+
+  .section3 {
     width: 100%;
     height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-  .dots{
+
+  .dots {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  .dots-container{
+
+  .dots-container {
     width: 90px;
     height: 20px;
   }
 
-  .info{
+  .info {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -643,27 +655,25 @@ p {
 
   #about {
     width: 100%;
-  
     background-color: #fff;
-  
   }
-  .content-about{
+
+  .content-about {
     width: 100%;
     height: 800px;
     align-items: center;
     box-sizing: border-box;
-
   }
 
-  .about-me{
+  .about-me {
     height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
   }
-  .about-text{
+
+  .about-text {
     font-size: 18px;
     line-height: 1.6;
     width: 300px;
@@ -674,17 +684,15 @@ p {
     color: #000;
     font-size: 24px;
     margin: 30px;
-
   }
 
-
-  .icon{
+  .icon {
     width: 100%;
     position: relative;
     height: 10px;
     top: 250px;
-
   }
+
   .skills-section {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -722,7 +730,8 @@ p {
     width: 100%;
     height: auto;
   }
-  .skill-category{
+
+  .skill-category {
     margin: 40px 10px;
   }
 
@@ -780,10 +789,12 @@ p {
     position: relative;
     visibility:collapse ;
   }
-  .active .logo{
+
+  .active .logo {
     visibility: collapse;
   }
-  .active .nav-links{
+
+  .active .nav-links {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -800,42 +811,48 @@ p {
     transition: all .1s linear;
     z-index: 1;
   }
-  .active li i{
+
+  .active li i {
     cursor: pointer;
     visibility: visible;
   }
 
-  .active .menu-icon{
+  .active .menu-icon {
     visibility: hidden;
   }
-  .menu-icon{
+
+  .menu-icon {
     display: inline-block;
   }
-  .x-icon{
+
+  .x-icon {
     font-size:40px;
   }
 
-  .section{
+  .section {
     display: flex;
     flex-direction: column;
   }
-  .hello-content{
+
+  .hello-content {
     margin: 2px;
   }
-  #certificates{
+
+  #certificates {
     margin: 2px;
     height: 400px;
     border-top: 2px solid palevioletred;
   }
-  .projects-container{
+
+  .projects-container {
     width: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-
   }
-  #contact{
+
+  #contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -843,54 +860,54 @@ p {
     width: 100%;
     height: 400px;
   }
-  .form-group{
+
+  .form-group {
     margin: 20px;
   }
-  .submit-button{
+
+  .submit-button {
     width: 200px;
     height: 40px;
     background-color: #575757;
   }
 
-  /* Popup styles */
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
+  .popup {
+   display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
 
-.popup-content {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-  width: 90%;  /* Set width */
-  height: 400px; /* Set height */
-  position: relative;
-  box-sizing: border-box; /* Ensures padding is included in the width and height */
-  display: flex;
-  flex-direction: column; /* Stack child elements vertically */
-  justify-content: space-between; /* Distribute space between items */
-  overflow: hidden; /* Hides content overflow */
-  bottom: 20%;
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    height: 400px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between; /* Distribute space between items */
+    overflow: hidden; /* Hides content overflow */
+    bottom: 20%;
+  }
 
-}
+  .popup-content img {
+    width: 290px;
+    height: 150px;
+    object-fit: cover;
+  }
 
-.popup-content img {
-  width: 290px;
-  height: 150px;
-  object-fit: cover; /* Ensures the image covers the available space without distortion */
-}
-
-.popup-content h3, .popup-content p, .popup-content a {
-  margin: 0;
-  padding: 5px ;
-}
+  .popup-content h3 .popup-content p .popup-content a {
+    margin: 0;
+    padding: 5px ;
+  }
 
 .close-btn {
   position: absolute;
@@ -899,6 +916,5 @@ p {
   font-size: 20px;
   cursor: pointer;
 }
-
 
 }
