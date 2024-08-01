@@ -72,23 +72,30 @@ const projects = [
       title: "Effective",
       description: "A Roman Numeral Converter",
       image: "R.N.C.jpg",
-      liveLink: "https://example.com/live1",
-      sourceLink: "https://github.com/example/repo1"
+      liveLink: "https://latifa-wakili.github.io/Roman-Numeral-Converter/",
+      sourceLink: "https://github.com/latifa-wakili/Roman-Numeral-Converter?tab=readme-ov-file"
   },
   {
       title: "Effective",
       description: "A Plondoriam checker",
       image: "P.C.jpg",
-      liveLink: "https://example.com/live2",
-      sourceLink: "https://github.com/example/repo2"
+      liveLink: "https://latifa-wakili.github.io/first-js-repo/",
+      sourceLink: "https://github.com/latifa-wakili/first-js-repo/tree/feature-branch"
   },
   {
       title: "Effective",
-      description: "A platform for e-learning website",
+      description: "Pokeman search app",
       image: "Pik.png",
-      liveLink: "https://example.com/live3",
-      sourceLink: "https://github.com/example/repo3"
-  }
+      liveLink: "https://latifa-wakili.github.io/Pok-mon-Search-App/",
+      sourceLink: "https://github.com/latifa-wakili/Pok-mon-Search-App"
+  },
+  {
+    title: "Effective",
+    description: "A Cash Ragister",
+    image: "C.R.png",
+    liveLink: "https://latifa-wakili.github.io/-Cash-Register/",
+    sourceLink: "https://github.com/latifa-wakili/-Cash-Register"
+}
 ];
 
 document.querySelectorAll('.see-project').forEach(button => {
