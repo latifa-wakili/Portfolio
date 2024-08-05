@@ -975,25 +975,7 @@ a {
     visibility: collapse;
   }
 
-  .active {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    visibility: visible;
-    border: 2px solid palevioletred;
-    background-color: pink;
-    width: 130px;
-    height:240px ;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    right: 30px;
-    top: 40px;
-    transition: all .1s linear;
-    z-index: 1;
-  }
-  
-  .nav-links {
+  .active .nav-links {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1096,7 +1078,7 @@ a {
   }
 
   .popup {
-    display: none;
+   display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -1116,7 +1098,6 @@ a {
     font-weight: bold;
     margin-top: -70px;
   }
-  
   .pop-but {
     width: 90px;
     padding: 2.5px;
