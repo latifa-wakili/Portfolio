@@ -102,13 +102,13 @@ nav {
 }
 
 .dot-image img {
-  position:absolute;
+  position: absolute;
   height: auto;
   display: flex;
   margin-top: 30px;
 }
 
-.star1-image img  {
+.star1-image img {
   position: absolute;
   height: auto;
   display: flex;
@@ -116,22 +116,50 @@ nav {
 }
 
 /* Star Image Positioning */
-.star1-image img:nth-child(1) { top: 12%; left: 54%; }
-.star1-image img:nth-child(2) { top: 13%; left: 52%; }
-.star1-image img:nth-child(3) { top: 3%; left: 49%; }
-.star1-image img:nth-child(4) { top: 10%; left: 49%; }
-.star1-image img:nth-child(5) { top: 9%; left: 52%; }
-.star1-image img:nth-child(6) { top: 6%; left: 54%; }
-.star1-image img:nth-child(7) { top: 8%; left: 55%; }
+.star1-image img:nth-child(1) {
+  top: 12%; left: 54%;
+}
+.star1-image img:nth-child(2) {
+  top: 13%; left: 52%;
+}
+.star1-image img:nth-child(3) {
+  top: 3%; left: 49%;
+}
+.star1-image img:nth-child(4) {
+  top: 10%; left: 49%;
+}
+.star1-image img:nth-child(5) {
+  top: 9%; left: 52%;
+}
+.star1-image img:nth-child(6) {
+  top: 6%; left: 54%;
+}
+.star1-image img:nth-child(7) {
+  top: 8%; left: 55%;
+}
 
 /* Dot Image Positioning */
-.dot-image img:nth-child(1) { top: 6%; left: 45%; }
-.dot-image img:nth-child(2) { top: 5%; left: 50%; }
-.dot-image img:nth-child(3) { top: 2%; left: 44%; }
-.dot-image img:nth-child(4) { top: 5%; left: 43%; }
-.dot-image img:nth-child(5) { top: 4%; left: 47%; }
-.dot-image img:nth-child(6) { top: 12%; left: 44%; }
-.dot-image img:nth-child(7) { top: 9%; left: 46%; }
+.dot-image img:nth-child(1) {
+  top: 6%; left: 45%;
+}
+.dot-image img:nth-child(2) {
+  top: 5%; left: 50%;
+}
+.dot-image img:nth-child(3) {
+  top: 2%; left: 44%;
+}
+.dot-image img:nth-child(4) {
+  top: 5%; left: 43%;
+}
+.dot-image img:nth-child(5) {
+  top: 4%; left: 47%;
+}
+.dot-image img:nth-child(6) {
+  top: 12%; left: 44%;
+}
+.dot-image img:nth-child(7) {
+  top: 9%; left: 46%;
+}
 
 .profile-image {
   display: flex;
@@ -202,16 +230,98 @@ p {
   color: #333;
 }
 
-.certificate-card {
+/* Updated CSS */
+
+.dot-image img {
+  position: absolute;
+  height: auto;
   display: flex;
-  align-items: center;
-  background-color: #fba4b9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.star1-image img {
+  position: absolute;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Star Image Positioning */
+.star1-image img:nth-child(1) {
+  top: 12%;
+  left: 54%;
+}
+.star1-image img:nth-child(2) {
+  top: 13%;
+  left: 52%;
+}
+.star1-image img:nth-child(3) {
+  top: 3%;
+  left: 49%;
+}
+.star1-image img:nth-child(4) {
+  top: 10%;
+  left: 49%;
+}
+.star1-image img:nth-child(5) {
+  top: 9%;
+  left: 52%;
+}
+.star1-image img:nth-child(6) {
+  top: 6%;
+  left: 54%;
+}
+.star1-image img:nth-child(7) {
+  top: 8%;
+  left: 55%;
+}
+
+/* Dot Image Positioning */
+.dot-image img:nth-child(1) {
+  top: 6%;
+  left: 45%;
+}
+.dot-image img:nth-child(2) {
+  top: 5%;
+  left: 50%;
+}
+.dot-image img:nth-child(3) {
+  top: 2%;
+  left: 44%;
+}
+.dot-image img:nth-child(4) {
+  top: 5%;
+  left: 43%;
+}
+.dot-image img:nth-child(5) {
+  top: 4%;
+  left: 47%;
+}
+.dot-image img:nth-child(6) {
+  top: 12%;
+  left: 44%;
+}
+.dot-image img:nth-child(7) {
+  top: 9%;
+  left: 46%;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
 .icon2 {
@@ -230,10 +340,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.icon-img {
-  width: 100%;
 }
 
 .dots-container {
@@ -261,7 +367,7 @@ p {
 
 .icon {
   width: 50%;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   height: 100vh;
   display: flex;
@@ -284,7 +390,7 @@ p {
   position: relative;
   bottom: 170px;
   right: 100px;
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
@@ -301,12 +407,6 @@ p {
   margin: 20px auto;
 }
 
-.certificates-content h2 {
-  margin-bottom: 20px;
-  font-size: 2em;
-  color: #333;
-}
-
 .certificates-section {
   padding: 20px;
   background-color: #fff;
@@ -316,6 +416,12 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.certificates-content h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
 }
 
 .certificate-card {

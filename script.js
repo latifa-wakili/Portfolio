@@ -50,7 +50,7 @@ document.querySelectorAll('.nav-links a').forEach((anchor) => {
     e.preventDefault();
     document.querySelector('.header').classList.remove('active');
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   });
 });
@@ -77,10 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailPattern = /^[^\s@]+@[^\s]+\.[^\s@]+$/;
     const errorElement = document.querySelector('#error-message');
 
-    if (nameField.value.length <= 30 && nameField.value !== '' &&
-        emailPattern.test(emailField.value) && emailField.value !== '' &&
-        messageField.value.length >= 50 && messageField.value !== '') {
-      
+    if (
+      nameField.value.length <= 30 &&
+      nameField.value !== '' &&
+      emailPattern.test(emailField.value) &&
+      emailField.value !== '' &&
+      messageField.value.length >= 50 &&
+      messageField.value !== ''
+    ) {
       errorElement.style.display = 'none';
       event.target.submit();
       localStorage.removeItem('formData');
@@ -96,29 +100,29 @@ const projects = [
     description: 'A Roman Numeral Converter',
     image: 'R.N.C.jpg',
     liveLink: 'https://latifa-wakili.github.io/Roman-Numeral-Converter/',
-    sourceLink: 'https://github.com/latifa-wakili/Roman-Numeral-Converter?tab=readme-ov-file'
+    sourceLink: 'https://github.com/latifa-wakili/Roman-Numeral-Converter?tab=readme-ov-file',
   },
   {
     title: 'Effective',
     description: 'A Plondoriam checker',
     image: 'P.C.jpg',
     liveLink: 'https://latifa-wakili.github.io/first-js-repo/',
-    sourceLink: 'https://github.com/latifa-wakili/first-js-repo/tree/feature-branch'
+    sourceLink: 'https://github.com/latifa-wakili/first-js-repo/tree/feature-branch',
   },
   {
     title: 'Effective',
     description: 'Pokeman search app',
     image: 'Pik.png',
     liveLink: 'https://latifa-wakili.github.io/Pok-mon-Search-App/',
-    sourceLink: 'https://github.com/latifa-wakili/Pok-mon-Search-App'
+    sourceLink: 'https://github.com/latifa-wakili/Pok-mon-Search-App',
   },
   {
     title: 'Effective',
     description: 'A Cash Ragister',
     image: 'C.R.png',
     liveLink: 'https://latifa-wakili.github.io/-Cash-Register/',
-    sourceLink: 'https://github.com/latifa-wakili/-Cash-Register'
-  }
+    sourceLink: 'https://github.com/latifa-wakili/-Cash-Register',
+  },
 ];
 
 document.querySelectorAll('.see-project').forEach((button) => {
