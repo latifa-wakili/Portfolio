@@ -119,12 +119,15 @@ nav {
 .star1-image img:nth-child(1) {
   top: 12%; left: 54%;
 }
+
 .star1-image img:nth-child(2) {
   top: 13%; left: 52%;
 }
+
 .star1-image img:nth-child(3) {
   top: 3%; left: 49%;
 }
+
 .star1-image img:nth-child(4) {
   top: 10%; left: 49%;
 }
@@ -456,7 +459,7 @@ p {
   color: #333;
 }
 
-.certificate-image.enlarged {
+.enlarged {
   transform: scale(4);
   z-index: 1000;
   position: relative;
@@ -520,7 +523,6 @@ p {
   justify-content: center;
 }
 
-
 .language-tags {
   display: flex;
   align-items: center;
@@ -575,7 +577,7 @@ p {
   border: solid #246b86;
   border-radius: 30px;
   padding: 20px;
-  width: calc(50% - 40px); /* Two cards per row on desktop */
+  width: calc(50% - 40px);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -732,7 +734,6 @@ a {
 
 }
 
-
 #contact {
   background-color: #f7577de8;
   color: rgb(0, 0, 0);
@@ -801,7 +802,7 @@ a {
     align-items: center;
     flex-direction: column;
   }
-  
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -813,7 +814,7 @@ a {
   .menu-icon {
     visibility: visible;
   }
-  
+
   .logo {
     font-size: 24px;
     font-weight: bold;
@@ -825,19 +826,19 @@ a {
     flex-direction: column;
     height: 500px;
   }
-  
+
   nav {
     width: 30px;
   }
-  
+
   .nav-links {
     margin: 0;
   }
-  
+
   .nav-links li {
     margin-left: 0;
   }
-  
+
   .menu-icon {
     font-size: 30px;
   }
@@ -862,13 +863,13 @@ a {
   .icon2 {
     visibility: collapse;
   }
-  
+
   .dot-image img {
     position:absolute;
     height: auto;
     display: flex;
   }
-  
+
   .star1-image img {
     position: absolute;
     height: auto;
@@ -971,30 +972,30 @@ a {
     width: 100%;
     margin-top: 70px;
   }
-  
+
   .skills-container {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .skill {
     color: #000;
     margin: 10px;
   }
-  
+
   .skills-text {
     flex: 1;
   }
-  
+
   .soft-skills {
     flex: 1;
    margin: 40px 40px;
   }
-  
+
   .skills-image {
     flex: 1;
   }
-  
+
   .skills-image img {
     width: 100%;
     height: auto;
@@ -1017,7 +1018,7 @@ a {
   #my-work h2 {
     color: #000;
   }
-  
+
   .project-card {
     background-color: #f095b5;
     border-radius: 10px;
@@ -1028,25 +1029,25 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 370px;
   }
-  
+
   .project-technologies {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-  
+
   .tech-icon {
     border-radius: 50px;
     padding: 5px;
     height: 35px;
     width: auto;
   }
-  
+
   .project-details {
     margin-left: 1px;
     flex-grow: 1;
   }
-  
+
   .project-screenshot img {
     width: 130px;
     height: auto;
@@ -1054,7 +1055,7 @@ a {
     margin-left: 5px;
     margin-bottom: 50px;
   }
-  
+
   .see-project {
     background-color: #f7577d;
     color: black;
@@ -1069,18 +1070,18 @@ a {
     padding: 5px 30px;
     margin-left: -150px;
   }
-  
+
   .nav-links {
     padding: 0;
     display: flex;
     position: relative;
     visibility: collapse;
   }
-  
+
   .active .logo {
     visibility: collapse;
   }
-  
+
   .active .nav-links {
     display: flex;
     flex-direction: column;
@@ -1098,33 +1099,33 @@ a {
     transition: all 0.1s linear;
     z-index: 1;
   }
-  
+
   .active li i {
     cursor: pointer;
     visibility: visible;
   }
-  
+
   .active .menu-icon {
     visibility: hidden;
   }
-  
+
   .menu-icon {
     display: inline-block;
   }
-  
+
   .x-icon {
     font-size: 40px;
   }
-  
+
   .section {
     display: flex;
     flex-direction: column;
   }
-  
+
   .hello-content {
     margin: 2px;
   }
-  
+
   .certificate-card {
     display: flex;
     align-items: center;
@@ -1136,27 +1137,27 @@ a {
     width: 300px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.228);
   }
-  
+
   .certificate-card img {
-    width: 170px;
+    width: 130px;
     height: auto;
     border-radius: 4px;
     margin-right: 15px;
     transition: transform 0.3s ease, z-index 0s ease 0.3s;
   }
-  
+
   .certificates-content h2 {
     margin-bottom: 20px;
     font-size: 1em;
     color: #333;
   }
-  
+
   #certificates {
     margin: 2px;
     height: 400px;
     width: 100px;
   }
-  
+
   .projects-container {
     width: 100%;
     justify-content: center;
@@ -1164,7 +1165,7 @@ a {
     display: flex;
     flex-direction: column;
   }
-  
+
   #contact {
     display: flex;
     justify-content: center;
@@ -1173,17 +1174,17 @@ a {
     width: 100%;
     height: 400px;
   }
-  
+
   .form-group {
     margin: 20px;
   }
-  
+
   .submit-button {
     width: 200px;
     height: 40px;
     background-color: #575757;
   }
-  
+
   .popup {
     display: none;
     position: fixed;
@@ -1195,7 +1196,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
+
   .pop-but1 {
     width: 90px;
     margin-left: 250px;
@@ -1205,7 +1206,7 @@ a {
     font-weight: bold;
     margin-top: -70px;
   }
-  
+
   .pop-but {
     width: 90px;
     padding: 2.5px;
@@ -1213,11 +1214,11 @@ a {
     background-color: #eb2f64;
     font-weight: bold;
   }
-  
+
   a {
     color: #000;
   }
-  
+
   .popup-content {
     background: rgb(228, 141, 168);
     padding: 20px;
@@ -1232,28 +1233,28 @@ a {
     overflow: hidden;
     bottom: 20%;
   }
-  
+
   .popup-content img {
     width: 290px;
     height: 150px;
     object-fit: cover;
   }
-  
+
   .popup-content h3 {
     margin: 0;
     padding: 5px;
   }
-  
+
   .popup-content a {
     margin: 0;
     padding: 5px;
   }
-  
+
   .popup-content p {
     margin: 0;
     padding: 5px;
   }
-  
+
   .close-btn {
     position: absolute;
     top: 10px;
@@ -1261,13 +1262,13 @@ a {
     font-size: 20px;
     cursor: pointer;
   }
-  
+
   #certificates {
     margin: 2px;
     height: 400px;
     width: 100px;
   }
-  
+
   .projects-container {
     width: 100%;
     justify-content: center;
@@ -1275,7 +1276,7 @@ a {
     display: flex;
     flex-direction: column;
   }
-  
+
   #contact {
     display: flex;
     justify-content: center;
@@ -1284,17 +1285,17 @@ a {
     width: 100%;
     height: 400px;
   }
-  
+
   .form-group {
     margin: 20px;
   }
-  
+
   .submit-button {
     width: 200px;
     height: 40px;
     background-color: #575757;
   }
-  
+
   .popup {
     display: none;
     position: fixed;
@@ -1306,7 +1307,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
+
   .pop-but1 {
     width: 90px;
     margin-left: 250px;
@@ -1316,7 +1317,7 @@ a {
     font-weight: bold;
     margin-top: -70px;
   }
-  
+
   .pop-but {
     width: 90px;
     padding: 2.5px;
@@ -1324,11 +1325,11 @@ a {
     background-color: #eb2f64;
     font-weight: bold;
   }
-  
+
   a {
     color: #000;
   }
-  
+
   .popup-content {
     background: rgb(228, 141, 168);
     padding: 20px;
@@ -1338,38 +1339,10 @@ a {
     position: relative;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    justify-content: space-between; /* Distribute space between items */
-    overflow: hidden; /* Hides content overflow */
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; 
     bottom: 20%;
   }
-  
-  .popup-content img {
-    width: 290px;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .popup-content h3 {
-    margin: 0;
-    padding: 5px;
-  }
-  
-  .popup-content a {
-    margin: 0;
-    padding: 5px;
-  }
-  
-  .popup-content p {
-    margin: 0;
-    padding: 5px;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
+
 }
