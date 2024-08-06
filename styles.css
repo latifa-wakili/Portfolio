@@ -71,6 +71,11 @@ a {
   display: block;
 }
 
+.popup-content a {
+  margin: 0;
+  padding: 5px;
+}
+
 .nav-links a:hover {
   background-color: #575757;
   border-radius: 4px;
@@ -142,6 +147,22 @@ a {
   height: auto;
   width: 100%;
   object-fit: cover;
+}
+
+.popup-content img {
+  width: 850px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.skills-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-screenshot img {
+  width: 80%;
+  border-radius: 10px;
 }
 
 .star1-image img:nth-child(1) {
@@ -312,6 +333,7 @@ p {
   justify-content: center;
   height: 100vh;
   display: flex;
+  margin-right: 10px;
 }
 
 .about-text {
@@ -430,11 +452,6 @@ p {
   justify-content: space-between;
 }
 
-.project-screenshot img {
-  width: 80%;
-  border-radius: 10px;
-}
-
 .skill {
   color: #000;
   margin: 20px;
@@ -446,17 +463,12 @@ p {
 
 .soft-skills {
   flex: 1;
-
 }
 
 .skills-image {
   flex: 1;
 }
 
-.skills-image img {
-  width: 100%;
-  height: auto;
-}
 .skill-category {
   margin: 40px;
 }
@@ -464,10 +476,6 @@ p {
 .language-tags {
   display: flex;
   justify-content: center;
-}
-
-.language-tags {
-  display: flex;
   align-items: center;
   margin: 10px;
   padding: 10px 20px;
@@ -485,14 +493,6 @@ p {
 }
 
 .language-tags {
-  margin-right: 10px;
-}
-
-.tag {
-  margin-right: 10px;
-}
-
-.icon {
   margin-right: 10px;
 }
 
@@ -526,7 +526,6 @@ p {
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  padding: 1em;
 }
 
 .project-technologies {
@@ -602,7 +601,7 @@ p {
 }
 
 .popup-content {
-  background: #FBA4B9;
+  background: #fba4b9;
   padding: 20px;
   border-radius: 15px;
   width: 950px;
@@ -615,25 +614,14 @@ p {
   overflow: hidden;
 }
 
-.popup-content img {
-  width: 850px;
-  height: 350px;
-  object-fit: cover;
-}
-
-.popup-content h3{
+.popup-content h3 {
   margin: 0;
-  padding: 5px ;
+  padding: 5px;
 } 
 
 .popup-content p {
   margin: 0;
-  padding: 5px ;
-}
-
-.popup-content a {
-  margin: 0;
-  padding: 5px ;
+  padding: 5px;
 }
 
 .pop-but1 {
@@ -723,7 +711,7 @@ p {
 }
 
 @media only screen and (max-width: 430px) {
-  *{
+  * {
     padding: 0;
     margin: 0;
   }
@@ -793,14 +781,11 @@ p {
   .icon2 {
     margin-left: 0;
     margin-bottom: 0;
-  }
-
-  .icon2 {
     visibility: collapse;
   }
 
   .dot-image img {
-    position:absolute;
+    position: absolute;
     height: auto;
     display: flex;
   }
@@ -826,7 +811,7 @@ p {
     padding: 30px;
     margin: 10px;
     width: 300px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.228);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.228);
   }
 
   .certificate-card img {
@@ -852,7 +837,7 @@ p {
 
   .star1-image img:nth-child(1) {
     top: 7%;
-    left: 34%; 
+    left: 34%;
   }
 
   .star1-image img:nth-child(2) {
@@ -865,18 +850,60 @@ p {
     left: 39%;
   }
 
-  .star1-image img:nth-child(4) { top: 8%; left: 49%; }
-  .star1-image img:nth-child(5) { top: 4%; left: 40%; }
-  .star1-image img:nth-child(6) { top: 3%; left: 54%; }
-  .star1-image img:nth-child(7) { top: 4%; left: 55%; }
+  .star1-image img:nth-child(4) {
+    top: 8%;
+    left: 49%;
+  }
 
-  .dot-image img:nth-child(1) { top: 7%; left: 45%; }
-  .dot-image img:nth-child(2) { top: 5%; left: 36%; }
-  .dot-image img:nth-child(3) { top: 3%; left: 47%; }
-  .dot-image img:nth-child(4) { top: 7%; left: 60%; }
-  .dot-image img:nth-child(5) { top: 6%; left: 53%; }
-  .dot-image img:nth-child(6) { top: 9%; left: 53%; }
-  .dot-image img:nth-child(7) { top: 9%; left: 46%; }
+  .star1-image img:nth-child(5) {
+    top: 4%;
+    left: 40%;
+  }
+
+  .star1-image img:nth-child(6) {
+    top: 3%;
+    left: 54%;
+  }
+
+  .star1-image img:nth-child(7) {
+    top: 4%;
+    left: 55%;
+  }
+
+  .dot-image img:nth-child(1) {
+    top: 7%;
+    left: 45%;
+  }
+
+  .dot-image img:nth-child(2) {
+    top: 5%;
+    left: 36%;
+  }
+
+  .dot-image img:nth-child(3) {
+    top: 3%;
+    left: 47%;
+  }
+
+  .dot-image img:nth-child(4) {
+    top: 7%;
+    left: 60%;
+  }
+
+  .dot-image img:nth-child(5) {
+    top: 6%;
+    left: 53%;
+  }
+
+  .dot-image img:nth-child(6) {
+    top: 9%;
+    left: 53%;
+  }
+
+  .dot-image img:nth-child(7) {
+    top: 9%;
+    left: 46%;
+  }
 
   .section3 {
     width: 100%;
@@ -926,7 +953,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .about-text {
