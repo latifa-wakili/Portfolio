@@ -142,13 +142,6 @@ a {
   object-fit: cover;
 }
 
-.profile-image img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-}
-
 .popup-content img {
   width: 850px;
   height: 350px;
@@ -163,6 +156,14 @@ a {
 .project-screenshot img {
   width: 80%;
   border-radius: 10px;
+}
+
+.certificate-card img {
+  width: 160px;
+  height: auto;
+  border-radius: 4px;
+  margin-right: 15px;
+  transition: transform 0.3s ease, z-index 0s ease 0.3s;
 }
 
 .star1-image img:nth-child(1) {
@@ -370,17 +371,6 @@ p {
   margin: 20px auto;
 }
 
-.certificates-section {
-  padding: 20px;
-  background-color: #fff;
-}
-
-.certificates-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .certificates-content h2 {
   margin-bottom: 20px;
   font-size: 2em;
@@ -397,14 +387,6 @@ p {
   margin: 20px;
   width: 300px;
   box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.071);
-}
-
-.certificate-card img {
-  width: 160px;
-  height: auto;
-  border-radius: 4px;
-  margin-right: 15px;
-  transition: transform 0.3s ease, z-index 0s ease 0.3s;
 }
 
 .certificate-details {
@@ -490,10 +472,6 @@ p {
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #f7577de8;
-}
-
-.language-tags {
-  margin-right: 10px;
 }
 
 #my-work {
@@ -617,7 +595,7 @@ p {
 .popup-content h3 {
   margin: 0;
   padding: 5px;
-} 
+}
 
 .popup-content p {
   margin: 0;
