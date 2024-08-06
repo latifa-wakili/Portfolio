@@ -60,6 +60,10 @@ nav {
   margin-left: 1rem;
 }
 
+a {
+  color: #000;
+}
+
 .nav-links a {
   color: #000;
   text-decoration: none;
@@ -124,6 +128,13 @@ nav {
   overflow: hidden;
   margin: 20px auto;
   position: relative;
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
 .profile-image img {
@@ -252,24 +263,6 @@ p {
   margin-bottom: 20px;
   font-size: 2em;
   color: #333;
-}
-
-.profile-image {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 20px auto;
-  position: relative;
-}
-
-.profile-image img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
 }
 
 .icon2 {
@@ -437,6 +430,11 @@ p {
   justify-content: space-between;
 }
 
+.project-screenshot img {
+  width: 80%;
+  border-radius: 10px;
+}
+
 .skill {
   color: #000;
   margin: 20px;
@@ -574,11 +572,6 @@ p {
   margin-bottom: 15px;
 }
 
-.project-screenshot img {
-  width: 80%;
-  border-radius: 10px;
-}
-
 .see-project {
   padding: 5px 30px;
   background-color: #f53b57;
@@ -661,10 +654,6 @@ p {
   font-weight: bold;
 }
 
-a {
-  color: #000;
-}
-
 .close-btn {
   position: absolute;
   top: 10px;
@@ -676,7 +665,6 @@ a {
 .contact-title {
   font-size: large;
   color: #000;
-
 }
 
 #contact {
@@ -862,9 +850,21 @@ a {
     height: auto;
   }
 
-  .star1-image img:nth-child(1) { top: 7%; left: 34%; }
-  .star1-image img:nth-child(2) { top: 3%; left: 52%; }
-  .star1-image img:nth-child(3) { top: 2%; left: 39%; }
+  .star1-image img:nth-child(1) {
+    top: 7%;
+    left: 34%; 
+  }
+
+  .star1-image img:nth-child(2) {
+    top: 3%;
+    left: 52%;
+  }
+
+  .star1-image img:nth-child(3) {
+    top: 2%;
+    left: 39%;
+  }
+
   .star1-image img:nth-child(4) { top: 8%; left: 49%; }
   .star1-image img:nth-child(5) { top: 4%; left: 40%; }
   .star1-image img:nth-child(6) { top: 3%; left: 54%; }
@@ -1057,7 +1057,7 @@ a {
   .active .nav-links {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     visibility: visible;
     border: 2px solid palevioletred;
     background-color: pink;
@@ -1065,7 +1065,6 @@ a {
     height: 240px;
     justify-content: center;
     align-items: center;
-    position: absolute;
     right: 30px;
     top: 40px;
     transition: all 0.1s linear;
