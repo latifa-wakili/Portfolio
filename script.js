@@ -31,7 +31,7 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
 });
 
 const closeButton = document.querySelector('.close-btn');
-closeButton.addEventListener('click', function () {
+closeButton.addEventListener('click', () => {
   document.querySelector('.popup-content').style.display = 'none';
 });
 
@@ -44,6 +44,8 @@ document.querySelectorAll('.certificate-image').forEach((image) => {
 function toggleMenu() {
   document.querySelector('.header').classList.toggle('active');
 }
+
+document.getElementById('menuButton').addEventListener('click', toggleMenu);
 
 document.querySelectorAll('.nav-links a').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
@@ -78,19 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorElement = document.querySelector('#error-message');
 
     if (
-      nameField.value.length <= 30 &&
-      nameField.value !== '' &&
-      emailPattern.test(emailField.value) &&
-      emailField.value !== '' &&
-      messageField.value.length >= 50 &&
-      messageField.value !== ''
+      nameField.value.length <= 30
+      && nameField.value !== ''
+      && emailPattern.test(emailField.value)
+      && emailField.value !== ''
+      && messageField.value.length >= 50
+      && messageField.value !== ''
     ) {
       errorElement.style.display = 'none';
       event.target.submit();
       localStorage.removeItem('formData');
     } else {
       errorElement.style.display = 'block';
-    }
+    }    
   });
 });
 
