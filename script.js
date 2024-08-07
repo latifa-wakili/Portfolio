@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.removeItem('formData');
     } else {
       errorElement.style.display = 'block';
-    }    
+    }
   });
 });
 
