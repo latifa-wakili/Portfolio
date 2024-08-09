@@ -7,7 +7,7 @@ body {
   background-image: url(Rectangle\ 53.png), url(bag.png);
   background-position: right top, left top;
   background-repeat: no-repeat;
-  background-size: 300px, 300px;
+  background-size: 500px, 500px;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -44,13 +44,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
   padding: 1rem;
   width: 50%;
 }
 
-.menu-icon {
-  visibility: collapse;
+.menu-button {
+  margin-left: 1200px;
+  visibility: hidden;
+  color: white;
 }
 
 .nav-links {
@@ -76,7 +77,7 @@ a {
 }
 
 .nav-links a:hover {
-  background-color: #575757;
+  background-color: #fe94ac;
   border-radius: 4px;
 }
 
@@ -146,6 +147,7 @@ a {
   height: 350px;
   object-fit: cover;
 }
+
 
 .skills-image img {
   width: 100%;
@@ -693,6 +695,18 @@ p {
     margin: 0;
   }
 
+  body {
+    background-image: url(Rectangle\ 53.png), url(bag.png);
+    background-position: right top, left top;
+    background-repeat: no-repeat;
+    background-size: 300px, 300px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+  }
+
   .container {
     width: 100%;
     display: flex;
@@ -722,7 +736,9 @@ p {
   }
 
   nav {
-    width: 30px;
+    width: 1px;
+    height: 2px;
+    background-color: #f387ad;
   }
 
   .nav-links {
@@ -735,12 +751,7 @@ p {
 
   .nav-links li {
     margin-left: 0;
-  }
-
-  .menu-icon {
-    font-size: 30px;
     visibility: visible;
-    display: inline-block;
   }
 
   .hello {
@@ -1168,15 +1179,18 @@ p {
     background: rgb(228, 141, 168);
     padding: 20px;
     border-radius: 5px;
-    width: 90%;
+    width: 80%;
     height: 400px;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1000;
     overflow: hidden;
-    bottom: 20%;
   }
 
   .popup-content h3 {
