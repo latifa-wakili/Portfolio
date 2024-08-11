@@ -152,10 +152,42 @@ a {
   height: auto;
 }
 
+.skills-section .soft-skills li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
 .skills-section .skill-category:nth-of-type(1) li {
   list-style-type: none;
   position: relative;
   padding-left: 30px;
+}
+
+.skills-section .soft-skills li:nth-of-type(3)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Learning.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .soft-skills li:nth-of-type(1)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('🦆 icon _mark github_.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .skills-section .skill-category:nth-of-type(1) li:nth-of-type(1)::before {
@@ -167,6 +199,19 @@ a {
   width: 20px;
   height: 20px;
   background-image: url('Group%2068.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .soft-skills li:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Puzzle.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -238,51 +283,6 @@ a {
   width: 20px;
   height: 20px;
   background-image: url('Puzzle.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skills-section .soft-skills li {
-  list-style-type: none;
-  position: relative;
-  padding-left: 30px;
-}
-
-.skills-section .soft-skills li:nth-of-type(1)::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url('🦆 icon _mark github_.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skills-section .soft-skills li:nth-of-type(2)::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url('Puzzle.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skills-section .soft-skills li:nth-of-type(3)::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url('Learning.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -782,7 +782,7 @@ p {
   display: flex;
 }
 
-.cont{
+.cont {
   flex-direction: column;
   padding: 100px;
   width: 100px;
@@ -797,7 +797,6 @@ p {
   max-width: 600px;
   margin: 300px;
   padding: 70px;
-
 }
 
 #contact-form input {
@@ -843,7 +842,6 @@ p {
   display: flex;
   width: calc(100% + 1237px);
   height: 46px;
-  margin-left: 0%;
   margin: 0%;
 }
 
@@ -1296,19 +1294,13 @@ p {
     height: 425px;
   }
 
-  .cont{
-    flex-direction: column;
-    padding: 2px;
-    width: 150px;
-  }
-
   .contact-title {
     font-size: large;
     color: #000;
     flex-direction: column;
   }
 
-  .cont{
+  .cont {
     flex-direction: column;
     padding: 30px;
     margin: 50px;
