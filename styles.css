@@ -190,19 +190,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.skills-section .skill-category:nth-of-type(1) li:nth-of-type(1)::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url('Group%2068.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .skills-section .soft-skills li:nth-of-type(2)::before {
   content: '';
   position: absolute;
@@ -212,6 +199,19 @@ a {
   width: 20px;
   height: 20px;
   background-image: url('Puzzle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .skill-category:nth-of-type(1) li:nth-of-type(1)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Group%2068.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
