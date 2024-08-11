@@ -51,7 +51,6 @@ nav {
 .menu-button {
   margin-left: 1200px;
   visibility: hidden;
-  color: white;
 }
 
 .nav-links {
@@ -151,6 +150,141 @@ a {
 .skills-image img {
   width: 100%;
   height: auto;
+}
+
+.skills-section .skill-category:nth-of-type(1) li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.skills-section .skill-category:nth-of-type(1) li:nth-of-type(1)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Group%2068.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .skill-category:nth-of-type(1) li:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Group%2085.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .skill-category:nth-of-type(1) li:nth-of-type(3)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Group%2083.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .skill-category:nth-of-type(2) li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.skills-section .skill-category:nth-of-type(2) li:nth-of-type(1)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('12832387_5088199 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .skill-category:nth-of-type(2) li:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Management.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .skill-category:nth-of-type(2) li:nth-of-type(3)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Puzzle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .soft-skills li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.skills-section .soft-skills li:nth-of-type(1)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('🦆 icon _mark github_.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .soft-skills li:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Puzzle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills-section .soft-skills li:nth-of-type(3)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('Learning.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project-screenshot img {
@@ -510,6 +644,7 @@ p {
   justify-content: center;
   margin-bottom: 15px;
   display: block;
+  flex-direction: column;
 }
 
 .tech-icon {
@@ -518,6 +653,7 @@ p {
   height: 40px;
   width: 40px;
   margin-right: 10px;
+  flex-direction: column;
 }
 
 .project-details {
@@ -1181,7 +1317,7 @@ p {
     width: 80%;
     height: 400px;
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 0;
     transform: translate(0, -50%);
     box-sizing: border-box;
