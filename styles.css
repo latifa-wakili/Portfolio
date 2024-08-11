@@ -300,6 +300,12 @@ a {
   transition: transform 0.3s ease, z-index 0s ease 0.3s;
 }
 
+.footer-link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
 .star1-image img:nth-child(1) {
   top: 12%;
   left: 54%;
@@ -872,12 +878,6 @@ p {
   text-decoration: none;
   color: black;
   margin: 0 10px;
-}
-
-.footer-link img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
 }
 
 .footer-link:hover {
