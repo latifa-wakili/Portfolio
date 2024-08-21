@@ -1,3 +1,4 @@
+// Toggle the navigation menu
 const menuIcon = document.querySelector('.menu-icon');
 const navLinks = document.querySelector('.nav-links');
 
@@ -5,11 +6,12 @@ menuIcon.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+// Form validation and localStorage management
 function validateForm() {
   const nameField = document.getElementById('name');
   const emailField = document.getElementById('email');
   const messageField = document.getElementById('message');
-  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  const emailPattern = /^[^\s@]+@[^\s]+\.[^\s@]+$/;
 
   if (nameField.value === '' || emailField.value === '' || messageField.value === '') {
     alert('All fields are required.');
@@ -30,16 +32,47 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   }
 });
 
-const closeButton = document.querySelector('.close-btn');
-closeButton.addEventListener('click', () => {
-  document.querySelector('.popup-content').style.display = 'none';
-});
+// Project popup management
+const project = [
+  // Your projects array here...
+];
 
-document.querySelectorAll('.certificate-image').forEach((image) => {
-  image.addEventListener('click', () => {
-    image.classList.toggle('enlarged');
+document.querySelectorAll('.see-project').forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const projectId = e.currentTarget.parentElement.getAttribute('data-id');
+    const project = projects[projectId];
+
+    document.getElementById('popup-title').textContent = project.title;
+    document.getElementById('popup-description').textContent = project.description;
+    document.getElementById('popup-image').src = project.image;
+    document.getElementById('popup-live-link').href = project.liveLink;
+    document.getElementById('popup-source-link').href = project.sourceLink;
+
+    document.getElementById('project-popup').style.display = 'flex';
   });
 });
+
+function closePopup() {
+  document.getElementById('project-popup').style.display = 'none';
+  
+  // Clear content to reset state
+  document.getElementById('popup-title').textContent = '';
+  document.getElementById('popup-description').textContent = '';
+  document.getElementById('popup-image').src = '';
+  document.getElementById('popup-live-link').href = '#';
+  document.getElementById('popup-source-link').href = '#';
+}
+
+document.querySelector('.close-btn').addEventListener('click', closePopup);
+
+window.addEventListener('click', (event) => {
+  if (event.target === document.getElementById('project-popup')) {
+    closePopup();
+  }
+});
+
+// Ensure the popup resets correctly each time it's closed
+window.addEventListener('unload', closePopup);
 
 function toggleMenu() {
   document.querySelector('.header').classList.toggle('active');
@@ -141,6 +174,33 @@ document.querySelectorAll('.see-project').forEach((button) => {
     document.getElementById('project-popup').style.display = 'flex';
   });
 });
+
+// Close the popup when the close button is clicked
+document.querySelector('.close-btn').addEventListener('click', () => {
+  document.getElementById('project-popup').style.display = 'none';
+  
+  // Reset the content in the popup to prevent any issues for the next time it's opened
+  document.getElementById('popup-title').textContent = '';
+  document.getElementById('popup-description').textContent = '';
+  document.getElementById('popup-image').src = '';
+  document.getElementById('popup-live-link').href = '#';
+  document.getElementById('popup-source-link').href = '#';
+});
+
+// Close the popup if the user clicks outside of it
+window.addEventListener('click', (event) => {
+  if (event.target === document.getElementById('project-popup')) {
+    document.getElementById('project-popup').style.display = 'none';
+    
+    // Reset the content in the popup
+    document.getElementById('popup-title').textContent = '';
+    document.getElementById('popup-description').textContent = '';
+    document.getElementById('popup-image').src = '';
+    document.getElementById('popup-live-link').href = '#';
+    document.getElementById('popup-source-link').href = '#';
+  }
+});
+
 
 document.querySelector('.close-btn').addEventListener('click', () => {
   document.getElementById('project-popup').style.display = 'none';

@@ -58,3 +58,6 @@ To use this website, you only should have a browser.
 ## Contributing 🤝
 It was a great team work with designers (Hadia Rauf, Froozan Azimi, Fatana Yaqubi, and Marzia Arman), who designed this special Portfolio page for me, thanks dears.
 
+## Figma design link:
+https://www.figma.com/design/Rybm1bV4YW24tmCreRU9bf/Untitled?node-id=0-1&t=mcFC5Pm3uUEuzVbo-1
+
