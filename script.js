@@ -42,29 +42,29 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
 // Project popup management
 const projects = [
   {
-    title: 'Effective',
-    description: 'A Roman Numeral Converter',
+    title: 'A Roman Numeral Converter',
+    description: 'A Roman Numeral Converter is a tool designed to translate Roman numerals into their equivalent decimal values and vice versa. This converter simplifies the process of understanding and working with Roman numerals, which are commonly used in historical contexts, clock faces, and some legal documents. By automating the conversion, the tool helps users quickly and accurately interpret and convert these ancient symbols.',
     image: 'R.N.C.jpg',
     liveLink: 'https://latifa-wakili.github.io/Roman-Numeral-Converter/',
     sourceLink: 'https://github.com/latifa-wakili/Roman-Numeral-Converter?tab=readme-ov-file',
   },
   {
-    title: 'Effective',
-    description: 'A Plondoriam checker',
+    title: 'A Plondoriam checker',
+    description: 'The Plondoriam Checker is a specialized tool built with HTML, CSS, and JavaScript, designed to validate and analyze Plondoriam sequences or data sets. This project demonstrates advanced logic and algorithm implementation, providing accurate results for specific input criteria. Its an excellent example of applying programming skills to create a niche solution for specialized tasks.',
     image: 'P.C.jpg',
     liveLink: 'https://latifa-wakili.github.io/first-js-repo/',
     sourceLink: 'https://github.com/latifa-wakili/first-js-repo/tree/feature-branch',
   },
   {
-    title: 'Effective',
-    description: 'Pokeman search app',
+    title: 'Pokeman search app',
+    description: 'The Pokémon Search App is a dynamic web application built with HTML, CSS, and JavaScript, designed to search and display detailed information about various Pokémon. Users can easily search by name or type, with the app fetching real-time data from a Pokémon API. This project demonstrates core web development skills and provides a fun, interactive way to explore the Pokémon universe.',
     image: 'Pik.png',
     liveLink: 'https://latifa-wakili.github.io/Pok-mon-Search-App/',
     sourceLink: 'https://github.com/latifa-wakili/Pok-mon-Search-App',
   },
   {
-    title: 'Effective',
-    description: 'A Cash Ragister',
+    title: 'A Cash Ragister',
+    description: 'This Cash Register project is a simple yet effective demonstration of JavaScript s capabilities, built using HTML, CSS, and JavaScript. It showcases fundamental programming concepts by calculating and displaying the correct change due based on user input. The project serves as an excellent foundation for understanding how front-end technologies work together in creating interactive web applications.',
     image: 'C.R.png',
     liveLink: 'https://latifa-wakili.github.io/-Cash-Register/',
     sourceLink: 'https://github.com/latifa-wakili/-Cash-Register',
