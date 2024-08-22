@@ -75,6 +75,27 @@ a {
   display: block;
 }
 
+.navigation a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pop-but1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.pop-but1 {
+  width: 100px;
+  padding: 7px;
+  margin-left: 450px;
+  border-radius: 5px;
+  background-color: #eb2f64;
+  font-weight: bold;
+}
+
 .nav-links a:hover {
   background-color: #fe94ac;
   border-radius: 4px;
@@ -138,12 +159,6 @@ a {
   max-width: 100%;
   height: auto;
   width: 100%;
-  object-fit: cover;
-}
-
-.popup-content img {
-  width: 850px;
-  height: 350px;
   object-fit: cover;
 }
 
@@ -304,6 +319,13 @@ a {
   width: 20px;
   height: 20px;
   margin-right: 8px;
+}
+
+.popup-content img {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .star1-image img:nth-child(1) {
@@ -742,7 +764,7 @@ p {
 
 .popup {
   display: none;
-  position:fixed;
+  position: fixed;
   top: 230px;
   left: 300px;
   width: 700px;
@@ -764,7 +786,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .popup-content h3 {
@@ -775,23 +797,10 @@ p {
   justify-content: left;
 }
 
-.popup-content img {
-  width: 600px;
-  height: 300px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
 .pop-but a {
   color: black;
   text-decoration: none;
   padding: 10px;
-}
-
-.pop-but1 a {
-  color: black;
-  text-decoration: none;
-
 }
 
 .navigation {
@@ -801,13 +810,6 @@ p {
   margin-top: 20px;
 }
 
-.navigation a {
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .close-btn {
   position: absolute;
   top: 10px;
@@ -815,15 +817,6 @@ p {
   font-size: 24px;
   cursor: pointer;
   color: #fff;
-}
-
-.pop-but1 {
-  width: 100px;
-  padding: 7px;
-  margin-left: 450px;
-  border-radius: 5px;
-  background-color: #eb2f64;
-  font-weight: bold;
 }
 
 .pop-but {
@@ -1044,12 +1037,6 @@ p {
     display: flex;
   }
 
-  .popup-content img {
-    width: 290px;
-    height: 150px;
-    object-fit: cover;
-  }
-
   .certificate-card {
     display: flex;
     align-items: center;
@@ -1081,6 +1068,13 @@ p {
   .skills-image img {
     width: 100%;
     height: auto;
+  }
+
+  .popup-content img {
+    width: 370px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
 
   .star1-image img:nth-child(1) {
@@ -1514,7 +1508,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000000;
+    color: #000;
   }
 
   .popup-content h3 {
@@ -1523,13 +1517,6 @@ p {
     font-size: 24px;
     color: #fff;
     justify-content: left;
-  }
-
-  .popup-content img {
-    width: 370px;
-    height: 250px;
-    border-radius: 10px;
-    margin-bottom: 15px;
   }
 
   .pop-but a {
@@ -1542,7 +1529,7 @@ p {
     color: black;
     text-decoration: none;
   }
-  
+
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -1581,14 +1568,6 @@ p {
     border-radius: 5px;
     background-color: #eb2f64;
     font-weight: bold;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
   }
 
   .footer {
