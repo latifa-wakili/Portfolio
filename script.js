@@ -13,7 +13,6 @@ document.querySelectorAll('.certificate-image').forEach((image) => {
   });
 });
 
-
 // Form validation and localStorage management
 function validateForm() {
   const nameField = document.getElementById('name');
@@ -89,7 +88,6 @@ document.querySelectorAll('.see-project').forEach((button) => {
 
 function closePopup() {
   document.getElementById('project-popup').style.display = 'none';
-  
   // Clear content to reset state
   document.getElementById('popup-title').textContent = '';
   document.getElementById('popup-description').textContent = '';
