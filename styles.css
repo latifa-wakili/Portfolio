@@ -1270,10 +1270,10 @@ p {
 
   #my-work h2 {
     color: #000;
-    text-align: left;
+    text-align: right;
     font-weight: bolder;
     margin-top: -10px;
-    margin-bottom: 0;
+    margin-right: -10px;
   }
 
   .project-card {
@@ -1283,7 +1283,8 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 370px;
     height: 200px;
-    margin-top: 0;
+    margin-top: -40px;
+    margin-bottom: 30px;
   }
 
   .effective {
@@ -1404,51 +1405,49 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    height: 425px;
+    width: 390px;
+    height: 400px;
   }
 
   .contact-title {
     color: #000;
     width: 200px;
     display: inline;
-    margin-right: 220px;
+    margin-right: -190px;
     font-size: 30px;
   }
 
   .contact-description {
     width: 220px;
-    margin-left: -300px;
+    margin-left: -90px;
     display: flex;
     justify-content: left;
   }
 
   #contact-form {
-    margin: 5px;
-    padding: 5px;
+    margin: 3px;
+    padding: 3px;
     background-color: #f7577d;
   }
 
   #contact-form input {
-    width: 160px;
+    width: 150px;
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 25px;
     font-size: 16px;
-    margin-left: -150px;
     display: flex;
   }
 
   #contact-form textarea {
-    width: 160px;
+    width: 150px;
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 25px;
     font-size: 16px;
     height: 50px;
-    margin-left: -150px;
     display: flex;
   }
 
@@ -1460,22 +1459,23 @@ p {
     font-weight: bold;
     width: 130px;
     height: 35px;
-    margin-left: -120px;
     display: flex;
+    margin-left: 30px;
   }
 
   .wave {
     position: relative;
-    bottom: 241px;
+    bottom: 210px;
     overflow: visible;
-    line-height: 40px;
+    line-height: 600px;
+    margin-right: -50px;
     margin-left: -20px;
   }
 
   .wave svg {
     position: relative;
-    display: flex;
-    width: calc(100% + 164px);
+    display: inline;
+    width: calc(100% + 294px);
     height: 46px;
     margin: 0%;
   }
@@ -1575,7 +1575,7 @@ p {
     color: black;
     padding: 20px;
     text-align: center;
-    width: 430px;
+    width: 390px;
     height: 40px;
   }
 
