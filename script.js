@@ -5,6 +5,14 @@ const navLinks = document.querySelector('.nav-links');
 menuIcon.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
+// Enlarge certificate image on click
+document.querySelectorAll('.certificate-image').forEach((image) => {
+  image.addEventListener('click', () => {
+    // Toggle a class that enlarges the image
+    image.classList.toggle('enlarged');
+  });
+});
+
 
 // Form validation and localStorage management
 function validateForm() {
@@ -33,8 +41,35 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
 });
 
 // Project popup management
-const project = [
-  // Your projects array here...
+const projects = [
+  {
+    title: 'Effective',
+    description: 'A Roman Numeral Converter',
+    image: 'R.N.C.jpg',
+    liveLink: 'https://latifa-wakili.github.io/Roman-Numeral-Converter/',
+    sourceLink: 'https://github.com/latifa-wakili/Roman-Numeral-Converter?tab=readme-ov-file',
+  },
+  {
+    title: 'Effective',
+    description: 'A Plondoriam checker',
+    image: 'P.C.jpg',
+    liveLink: 'https://latifa-wakili.github.io/first-js-repo/',
+    sourceLink: 'https://github.com/latifa-wakili/first-js-repo/tree/feature-branch',
+  },
+  {
+    title: 'Effective',
+    description: 'Pokeman search app',
+    image: 'Pik.png',
+    liveLink: 'https://latifa-wakili.github.io/Pok-mon-Search-App/',
+    sourceLink: 'https://github.com/latifa-wakili/Pok-mon-Search-App',
+  },
+  {
+    title: 'Effective',
+    description: 'A Cash Ragister',
+    image: 'C.R.png',
+    liveLink: 'https://latifa-wakili.github.io/-Cash-Register/',
+    sourceLink: 'https://github.com/latifa-wakili/-Cash-Register',
+  },
 ];
 
 document.querySelectorAll('.see-project').forEach((button) => {
@@ -127,87 +162,4 @@ document.addEventListener('DOMContentLoaded', () => {
       errorElement.style.display = 'block';
     }
   });
-});
-
-const projects = [
-  {
-    title: 'Effective',
-    description: 'A Roman Numeral Converter',
-    image: 'R.N.C.jpg',
-    liveLink: 'https://latifa-wakili.github.io/Roman-Numeral-Converter/',
-    sourceLink: 'https://github.com/latifa-wakili/Roman-Numeral-Converter?tab=readme-ov-file',
-  },
-  {
-    title: 'Effective',
-    description: 'A Plondoriam checker',
-    image: 'P.C.jpg',
-    liveLink: 'https://latifa-wakili.github.io/first-js-repo/',
-    sourceLink: 'https://github.com/latifa-wakili/first-js-repo/tree/feature-branch',
-  },
-  {
-    title: 'Effective',
-    description: 'Pokeman search app',
-    image: 'Pik.png',
-    liveLink: 'https://latifa-wakili.github.io/Pok-mon-Search-App/',
-    sourceLink: 'https://github.com/latifa-wakili/Pok-mon-Search-App',
-  },
-  {
-    title: 'Effective',
-    description: 'A Cash Ragister',
-    image: 'C.R.png',
-    liveLink: 'https://latifa-wakili.github.io/-Cash-Register/',
-    sourceLink: 'https://github.com/latifa-wakili/-Cash-Register',
-  },
-];
-
-document.querySelectorAll('.see-project').forEach((button) => {
-  button.addEventListener('click', () => {
-    const projectId = button.parentElement.getAttribute('data-id');
-    const project = projects[projectId];
-
-    document.getElementById('popup-title').textContent = project.title;
-    document.getElementById('popup-description').textContent = project.description;
-    document.getElementById('popup-image').src = project.image;
-    document.getElementById('popup-live-link').href = project.liveLink;
-    document.getElementById('popup-source-link').href = project.sourceLink;
-
-    document.getElementById('project-popup').style.display = 'flex';
-  });
-});
-
-// Close the popup when the close button is clicked
-document.querySelector('.close-btn').addEventListener('click', () => {
-  document.getElementById('project-popup').style.display = 'none';
-  
-  // Reset the content in the popup to prevent any issues for the next time it's opened
-  document.getElementById('popup-title').textContent = '';
-  document.getElementById('popup-description').textContent = '';
-  document.getElementById('popup-image').src = '';
-  document.getElementById('popup-live-link').href = '#';
-  document.getElementById('popup-source-link').href = '#';
-});
-
-// Close the popup if the user clicks outside of it
-window.addEventListener('click', (event) => {
-  if (event.target === document.getElementById('project-popup')) {
-    document.getElementById('project-popup').style.display = 'none';
-    
-    // Reset the content in the popup
-    document.getElementById('popup-title').textContent = '';
-    document.getElementById('popup-description').textContent = '';
-    document.getElementById('popup-image').src = '';
-    document.getElementById('popup-live-link').href = '#';
-    document.getElementById('popup-source-link').href = '#';
-  }
-});
-
-
-document.querySelector('.close-btn').addEventListener('click', () => {
-  document.getElementById('project-popup').style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target === document.getElementById('project-popup')) {
-    document.getElementById('project-popup').style.display = 'none';
-  }
 });
