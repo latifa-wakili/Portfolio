@@ -308,6 +308,10 @@ a {
   background-repeat: no-repeat;
 }
 
+div.menu-icon {
+  visibility: hidden;
+}
+
 .project-screenshot img {
   width: 80%;
   border-radius: 10px;
