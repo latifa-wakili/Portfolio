@@ -960,10 +960,11 @@ p {
     display: block;
   }
 
-  .menuButton{
+  .menuButton {
     visibility: visible;
     padding: 2px;
-    z-index: 1001;position: relative;
+    z-index: 1001;
+    position: relative;
     margin: 0 0 0 400px;
     background-color: #fb89a4;
     border: 0;
