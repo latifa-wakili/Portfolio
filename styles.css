@@ -50,7 +50,7 @@ nav {
   width: 50%;
 }
 
-.menuButton{
+.menuButton {
   visibility: hidden;
   margin-left: 600px;
 }
@@ -959,14 +959,12 @@ p {
   div.container {
     display: block;
   }
-  
+
   .menuButton{
     visibility: visible;
     padding: 2px;
-    margin-top: 35px;
     z-index: 1001;position: relative;
-    margin: auto;
-    margin-right: -15px;
+    margin: 0 0 0 400px;
     background-color: #fb89a4;
     border: 0;
   }
@@ -1087,7 +1085,7 @@ p {
     transition: transform 0.3s ease, z-index 0s ease 0.3s;
   }
 
-  img.certificate-image.enlarged{
+  img.certificate-image.enlarged {
     margin-left: 100px;
     width: 100px;
   }
