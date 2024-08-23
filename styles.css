@@ -25,14 +25,16 @@ body {
 }
 
 .header {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  vertical-align: bottom;
+  margin-bottom: 0;
 }
 
 .logo {
-  padding: 0 30px;
+  margin-top: -60px;
+  margin-right: 1100px;
+  vertical-align: top;
 }
 
 #logo {
@@ -48,9 +50,9 @@ nav {
   width: 50%;
 }
 
-.menu-button {
-  margin-left: 1200px;
+.menuButton{
   visibility: hidden;
+  margin-left: 600px;
 }
 
 .nav-links {
@@ -954,6 +956,21 @@ p {
     margin: 0;
   }
 
+  div.container {
+    display: block;
+  }
+  
+  .menuButton{
+    visibility: visible;
+    padding: 2px;
+    margin-top: 35px;
+    z-index: 1001;position: relative;
+    margin: auto;
+    margin-right: -15px;
+    background-color: #fb89a4;
+    border: 0;
+  }
+
   body {
     background-image: url(Rectangle\ 53.png), url(bag.png);
     background-position: right top, left top;
@@ -980,12 +997,16 @@ p {
     align-items: center;
     width: 100%;
     box-sizing: content-box;
+    z-index: 1000;
+    margin-top: 10px;
   }
 
   .logo {
     font-size: 24px;
     font-weight: bold;
-    padding: 20px;
+    padding: 15px;
+    display: block;
+    margin-top: -55px;
   }
 
   .section-2 {
@@ -1000,11 +1021,13 @@ p {
   }
 
   .nav-links {
-    padding: 0;
-    display: flex;
-    position: relative;
-    visibility: collapse;
-    margin: 0;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
   }
 
   .nav-links li {
@@ -1034,12 +1057,14 @@ p {
     position: absolute;
     height: auto;
     display: flex;
+    margin-top: -9px;
   }
 
   .star1-image img {
     position: absolute;
     height: auto;
     display: flex;
+    margin-top: -10px;
   }
 
   .certificate-card {
@@ -1060,6 +1085,11 @@ p {
     border-radius: 4px;
     margin-right: 15px;
     transition: transform 0.3s ease, z-index 0s ease 0.3s;
+  }
+
+  img.certificate-image.enlarged{
+    margin-left: 100px;
+    width: 100px;
   }
 
   .project-screenshot img {

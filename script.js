@@ -59,7 +59,7 @@ const projects = [
     title: 'Pokeman search app',
     description: 'The Pokémon Search App is a dynamic web application built with HTML, CSS, and JavaScript, designed to search and display detailed information about various Pokémon. Users can easily search by name or type, with the app fetching real-time data from a Pokémon API. This project demonstrates core web development skills and provides a fun, interactive way to explore the Pokémon universe.',
     image: 'Pik.png',
-    liveLink: 'https://latifa-wakili.github.io/Pok-mon-Search-App/',
+    liveLink: 'https://latifa-wakili.github.io/Pok-mon-Search-App/ ',
     sourceLink: 'https://github.com/latifa-wakili/Pok-mon-Search-App',
   },
   {
